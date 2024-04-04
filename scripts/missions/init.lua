@@ -14,12 +14,20 @@ local LOW_THREAT = false
 
 local BASE_MISSIONS = {
   {"Train", HIGH_THREAT}, -- We have our own train, comment out when added
+	{"Train", HIGH_THREAT}, -- We have our own train, comment out when added
+	{"Train", HIGH_THREAT}, -- We have our own train, comment out when added
+	{"Train", HIGH_THREAT}, -- We have our own train, comment out when added
+	{"Train", HIGH_THREAT}, -- We have our own train, comment out when added
+	{"Train", HIGH_THREAT}, -- We have our own train, comment out when added
+	{"Train", HIGH_THREAT}, -- We have our own train, comment out when added
   {"Trapped", LOW_THREAT},
 	{"Survive", LOW_THREAT},
 }
 
 local Nautilus_Missions = {
-  --{"Incinerator",LOW_THREAT}, --Incomplete
+  {"Leaping_Control",LOW_THREAT},
+	{"Leaping_Scramble",LOW_THREAT},
+	{"Leaping_Minimal",LOW_THREAT},
 }
 
 function this:init(mod)

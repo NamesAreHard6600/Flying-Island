@@ -19,6 +19,7 @@ function mod:init()
 	self.libs.weaponPreview = require(self.scriptPath.."libs/weaponPreview")
 	self.libs.customAnim = require(mod.scriptPath.."libs/customAnim")
 	self.libs.worldConstants = require(mod.scriptPath.."libs/worldConstants")
+	Skylance_leapingTiles = require(self.scriptPath.."libs/leapingTiles") --Needs to be global for script purposes
 
 	require(mod.scriptPath.."libs/boardEvents")
 
@@ -35,6 +36,7 @@ function mod:init()
 	require(self.scriptPath.."background") --Background needs to be before waterfall so it goes under the waterfalls
 	--require(self.scriptPath.."waterfall")
 	require(self.scriptPath.."extra_dialog")
+	require(self.scriptPath.."leapingTiles")
 
 	self.missions = require(self.scriptPath.."missions/init")
 	self.missions:init(self)
